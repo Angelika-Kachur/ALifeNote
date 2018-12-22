@@ -1,0 +1,91 @@
+.slide-enter {
+    opacity: 0;
+}
+.slide-enter-active {
+    transition: opacity 0.5s;
+}
+.slide-leave-active {
+    transition: opacity 0.5s;
+}
+.slide-leave-to {
+    opacity: 0;
+}
+
+.lika {
+    border: solid 2px pink;
+    padding: 10px;
+}
+
+.month-goals {
+    border: solid 1px blue;
+}
+.month-goals-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -.36em;
+}
+.month-goals-list li {
+    display: inline-block;
+    width: 33.3%;
+    background: pink;
+    border-radius: 100px;
+    position: relative;
+    padding: 30px 10px 10px;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+}
+.month-goals-list .title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+}
+.month-goals-list .text {
+    
+}
+
+/* Habit Report */
+::selection {
+    background: pink;
+}
+
+.habit-report {
+    display: flex;
+}
+
+.habit-report-titles {
+
+}
+
+.habit-report-table {
+
+}
+
+.habit-report-table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.habit-report-table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.habit-report-table th,
+.habit-report-table td {
+    text-align: center;
+}
+
+.habit-report-table th {
+    text-transform: uppercase;
+}
