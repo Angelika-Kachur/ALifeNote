@@ -1,45 +1,31 @@
 <template>
 
   <section class="date-section">
-      <h2>Today is..{{ date }}</h2>
+      <h2>Today is..{{ currentDate }}</h2>
   </section>
 
 </template>
 
 <script>
-  import Vue from 'vue';
-
-  console.log(Vue)
-
-  window.onload = function () {
-    var date = new Vue({
-      el: '.date-section',
-      data: {
+  export default {
+    data() {
+      return {
         text: 'Today is..',
         dateDay: new Date().getDate(),
         dateMonth: new Date().getMonth(),
         dateYear: new Date().getFullYear()
-
-      },
-      computed: {
-        currentDate: function () {
-          return this.dateDay + ' ' + this.dateMonth + ' ' + this.dateYear
-        }
       }
-    });
-  };
-
-
-  export default {
-    data() {
-      return {
-        date: new Date().getDate()
+    },
+    computed: {
+      currentDate: function () {
+        return  this.text + '.' + this.dateDay + '.' + (this.dateMonth + 1) + '.' + this.dateYear
       }
     }
   }
 </script>
 
-<style scoped>
+
+<style scoped> /* scoped for local css */
   .date-section {
     color: blue;
   }

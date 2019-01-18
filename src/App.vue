@@ -20,11 +20,14 @@
     components: {
       AppGratitudes: Gratitudes,
       AppDate: Date,
+    },
+    props: {
+      /* список переменных для двух компонентов */
     }
   }
 </script>
 
-<style>
+<style> /* no scoped to all css */
   body {
     color: green;
   }
